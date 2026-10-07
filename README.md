@@ -122,7 +122,7 @@ com.example.brewkery/
 ## 🤖 AI Workflow & Engineering Reflection (Take-Home Report)
 
 ### 1. AI Tools Utilized
-- **Antigravity IDE / Gemini 3.8 Flash**: Architecture design, Compose layout alignment, data model structure, and pure financial domain engine verification.
+- **Android Studio, Gemini AI & ChatGPT**: Architecture design, Compose layout alignment, data model structure, and pure financial domain engine verification.
 
 ### 2. Prompts Sent
 
