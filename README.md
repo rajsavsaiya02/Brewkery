@@ -107,11 +107,11 @@ com.example.brewkery/
 ### 2. Pure Mathematical Domain Engine (`PriceCalculator.kt`)
 - All pricing, tax, and fee calculations are isolated in a pure domain object `PriceCalculator`.
 - Prevents double-precision floating point drift (e.g., preventing `$9.39999999999` display errors) using standardized `roundToTwoDecimals` rounding logic.
-- Enforces financial invariants:
-  $$\text{Subtotal} = \sum (\text{Line Item Price} \times \text{Quantity})$$
-  $$\text{Delivery Fee} = \begin{cases} \$0.00 & \text{if cart is empty} \\ \$2.50 & \text{if cart has items} \end{cases}$$
-  $$\text{Tax} = \text{round}(\text{Subtotal} \times 0.08)$$
-  $$\text{Total} = \text{Subtotal} + \text{Delivery Fee} + \text{Tax}$$
+- Enforces exact financial calculations:
+  - **Subtotal**: Sum of `(Unit Price + Customization Extras) × Quantity` across all cart items.
+  - **Delivery Fee**: `$0.00` if cart is empty, otherwise flat `$2.50`.
+  - **Tax**: `8.0%` of Subtotal (rounded to 2 decimal places).
+  - **Total**: `Subtotal + Delivery Fee + Tax`.
 
 ### 3. Modern Edge-to-Edge & System Bars Compliance
 - Configured with `WindowCompat.setDecorFitsSystemWindows(window, false)`.
@@ -135,7 +135,7 @@ com.example.brewkery/
 > **Prompt 3 (Compose UI & Design System)**:
 > *"Build the 4-screen flow in Jetpack Compose Material 3 matching the Brewkery visual identity: warm espresso palette, category chips, floating cart bar, and an active order banner on the home screen that tracks placed orders."*
 
-#### Note: I always preferred to use refined prompt of give my raw context so it delivered be more accurate and expected outcome.
+> **Note**: Refined prompts with clear constraints and domain context were provided to ensure deterministic architecture and accurate calculations.
 
 ### 3. What AI Excelled At
 - **Declarative UI**: Rapidly scaffolded Material 3 Compose screens with smooth layout hierarchy and proper state hoisting.
