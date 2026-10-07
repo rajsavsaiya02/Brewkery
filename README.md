@@ -84,16 +84,16 @@ com.example.brewkery/
 
 ### Key Libraries & Stack Specs
 
-| Layer | Library / Tool | Version | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Language** | Kotlin | `2.2.10` | Coroutines, Flow, Data Classes |
-| **UI Framework** | Jetpack Compose | `2026.02.01` (BOM) | Declarative UI, Material 3, Edge-to-Edge |
-| **Architecture** | MVVM + Repository | - | Unidirectional Data Flow & State Management |
-| **Asynchronous** | Kotlin Coroutines & Flow | `1.10.1` | Asynchronous operations & reactive StateFlow |
-| **Networking** | Retrofit 2 + OkHttp 3 | `2.11.0` / `4.12.0` | API communication & JSON parsing |
-| **Image Loading** | Coil 3 | `3.1.0` | Asynchronous image caching & rendering |
-| **JSON Parser** | Gson | `2.11.0` | Serializing/Deserializing store data models |
-| **Unit Testing** | JUnit 4 + Google Truth | `4.13.2` / `1.4.4` | Financial calculation & repository unit tests |
+| Layer             | Library / Tool           | Version             | Purpose                                       |
+|:------------------|:-------------------------|:--------------------|:----------------------------------------------|
+| **Language**      | Kotlin                   | `2.2.10`            | Coroutines, Flow, Data Classes                |
+| **UI Framework**  | Jetpack Compose          | `2026.02.01` (BOM)  | Declarative UI, Material 3, Edge-to-Edge      |
+| **Architecture**  | MVVM + Repository        | -                   | Unidirectional Data Flow & State Management   |
+| **Asynchronous**  | Kotlin Coroutines & Flow | `1.10.1`            | Asynchronous operations & reactive StateFlow  |
+| **Networking**    | Retrofit 2 + OkHttp 3    | `2.11.0` / `4.12.0` | API communication & JSON parsing              |
+| **Image Loading** | Coil 3                   | `3.1.0`             | Asynchronous image caching & rendering        |
+| **JSON Parser**   | Gson                     | `2.11.0`            | Serializing/Deserializing store data models   |
+| **Unit Testing**  | JUnit 4 + Google Truth   | `4.13.2` / `1.4.4`  | Financial calculation & repository unit tests |
 
 ---
 
@@ -134,6 +134,8 @@ com.example.brewkery/
 
 > **Prompt 3 (Compose UI & Design System)**:
 > *"Build the 4-screen flow in Jetpack Compose Material 3 matching the Brewkery visual identity: warm espresso palette, category chips, floating cart bar, and an active order banner on the home screen that tracks placed orders."*
+
+#### Note: I always preferred to use refined prompt of give my raw context so it delivered be more accurate and expected outcome.
 
 ### 3. What AI Excelled At
 - **Declarative UI**: Rapidly scaffolded Material 3 Compose screens with smooth layout hierarchy and proper state hoisting.
